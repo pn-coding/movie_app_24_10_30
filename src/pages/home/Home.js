@@ -26,11 +26,11 @@ const Home = () => {
   }, []);
 
   console.log(nowData);
-  console.log(popData);
-  console.log(topData);
-  console.log(upData);
+  // console.log(popData);
+  // console.log(topData);
+  // console.log(upData);
 
-  return <div>Home hello</div>;
+  return <div>Home</div>;
 };
 
 export default Home;
