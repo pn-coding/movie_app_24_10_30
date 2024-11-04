@@ -5,8 +5,8 @@
 - [x] api 설정
 - [x] Loading, Header, Footer 글로벌 컴포넌트 구성
 - [x] 웹폰트 설정
+- [x] Helmet
 - [] 각 페이지 UI 작업 및 반응형
-- [] Helmet
 - [] Header Scroll Event
 - [] Deploy
 

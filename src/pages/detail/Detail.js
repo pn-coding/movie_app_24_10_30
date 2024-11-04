@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { mainStyle } from "../../GlobalStyeld";
 import Loading from "../../components/Loading";
 import { ORIGINAL_URL } from "../../constant/imgUrl";
+import PageTitle from "../../components/PageTitle";
 
 const Container = styled.section`
   padding: 100px ${mainStyle.pcPadding};
@@ -72,6 +73,7 @@ const Detail = () => {
         <Loading />
       ) : (
         <>
+          <PageTitle title={data?.title} />
           {data && (
             <Container>
               <Bg

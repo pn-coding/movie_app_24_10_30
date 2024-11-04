@@ -2,13 +2,10 @@ import { useEffect, useState } from "react";
 import { nowPlaying, popular, topRated, upComing } from "../../api";
 import Loading from "../../components/Loading";
 import Banner from "./components/Banner";
-import { Link } from "react-router-dom";
-import { W500_URL } from "../../constant/imgUrl";
-import styled from "styled-components";
-import { mainStyle } from "../../GlobalStyeld";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Movies from "./components/Movies";
+import { Helmet } from "react-helmet-async";
+import PageTitle from "../../components/PageTitle";
 
 const Home = () => {
   const [nowData, setNowData] = useState();
@@ -47,6 +44,7 @@ const Home = () => {
         <Loading />
       ) : (
         <>
+          <PageTitle title={"HOME"} />
           {nowData && (
             <div>
               <Banner data={nowData} />
