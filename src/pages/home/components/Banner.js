@@ -46,10 +46,10 @@ const TitleWrap = styled.div`
 
 const Banner = ({ data }) => {
   return (
-    <MainBanner $coverImg={data[0]?.backdrop_path}>
+    <MainBanner $coverImg={data[1]?.backdrop_path}>
       <TitleWrap>
-        <h3>{data[0]?.title}</h3>
-        <p>{data[0]?.overview.slice(0, 100) + "..."}</p>
+        <h3>{data[1]?.title}</h3>
+        <p>{data[1]?.overview.slice(0, 100) + "..."}</p>
       </TitleWrap>
     </MainBanner>
   );
