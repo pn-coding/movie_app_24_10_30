@@ -7,7 +7,7 @@
 - [x] 웹폰트 설정
 - [x] Helmet
 - [x] 각 페이지 UI 작업 및 반응형
-- [] Header Scroll Event
+- [x] Header Scroll Event
 - [] Deploy
 
 # 설치항목

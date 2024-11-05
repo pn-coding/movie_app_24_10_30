@@ -4,8 +4,8 @@ import Loading from "../../components/Loading";
 import Banner from "./components/Banner";
 import "swiper/css";
 import Movies from "./components/Movies";
-import { Helmet } from "react-helmet-async";
 import PageTitle from "../../components/PageTitle";
+import useScrollTop from "../../lib/useScrollTop";
 
 const Home = () => {
   const [nowData, setNowData] = useState();
@@ -13,6 +13,7 @@ const Home = () => {
   const [topData, setTopData] = useState();
   const [upData, setUpData] = useState();
   const [isLoading, setIsLoading] = useState(true);
+  useScrollTop();
 
   useEffect(() => {
     (async () => {
@@ -33,7 +34,7 @@ const Home = () => {
     })();
   }, []);
 
-  console.log(nowData);
+  // console.log(nowData);
   // console.log(popData);
   // console.log(topData);
   // console.log(upData);

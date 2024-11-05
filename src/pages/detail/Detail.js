@@ -7,6 +7,7 @@ import Loading from "../../components/Loading";
 import { ORIGINAL_URL } from "../../constant/imgUrl";
 import PageTitle from "../../components/PageTitle";
 import Wrapper from "../../components/Wrapper";
+import useScrollTop from "../../lib/useScrollTop";
 
 const Container = styled.section`
   display: flex;
@@ -54,6 +55,7 @@ const Detail = () => {
   const { id } = useParams();
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
+  useScrollTop();
 
   useEffect(() => {
     (async () => {
