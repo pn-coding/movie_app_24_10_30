@@ -50,7 +50,7 @@ const Home = () => {
             <div>
               <Banner data={nowData} />
 
-              <Movies data={nowData} title="현재 상영중" />
+              <Movies data={nowData} title="❤현재 상영중❤" />
               <Movies data={popData} title="인기영화" />
               <Movies data={topData} title="랭킹 영화" />
               <Movies data={upData} title="개봉 예정 영화" />
